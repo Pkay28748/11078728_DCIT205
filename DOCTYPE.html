@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -120,28 +121,87 @@
             margin: 0 auto;
         }
 
-        .left-section,
+         .left-section,
         .right-section {
             width: 48%;
             margin-bottom: 20px;
         }
 
-        .slideshow-container {
+        .section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px; /* Add space between the two sections */
+        }
+
+        .textbox {
+            flex: 1;
+            padding: 20px;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 0 10px;
+            text-align: left; /* Align text to the left by default */
+            border: 2px solid #ddd; /* Add border with a light gray color */
+            border-radius: 10px; /* Add border-radius for rounded corners */
+            transition: box-shadow 0.3s ease;
+        }
+
+        .right-textbox {
+            text-align: right; /* Align text to the right for this box */
+        }
+
+        .textbox h2 {
+            background-color: #2196F3;
+            color: #ffffff;
+            padding: 10px;
+            margin: -20px -20px 20px -20px; /* Overlap the border with the header */
+            border-top-left-radius: 10px; /* Adjust border-radius for the header */
+            border-top-right-radius: 10px; /* Adjust border-radius for the header */
+        }
+
+        .textbox:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+            }
+
+        .textbox h2,
+        .textbox h3,
+        .textbox p {
+            margin: 0;
+        }
+
+        .read-more {
+            cursor: pointer;
+            color: #2196F3;
+        }
+
+         .content {
+            max-height: 100px; /* Adjust the maximum height of the content */
+            overflow: hidden;
+            transition: max-height 0.3s ease-out; /* Add a smooth transition effect */
+        }
+
+        .expanded {
+            max-height: none; /* Allow the content to expand when the class is added */
+        }
+        
+       .slideshow-container {
             max-width: 100%;
             position: relative;
             margin: auto;
             overflow: hidden;
-            max-height: 300px; /* Adjusted max height of the slideshow */
+            max-height: 500px;
         }
 
-        .mySlides {
-            display: none;
-        }
+            .mySlides {
+                display: flex;
+                width: 100vw; /* Use viewport width to fill the entire screen */
+            }
 
-        img.slideshow-image {
-            width: 100%;
-            height: auto;
-        }
+            img.slideshow-image {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+
 
         footer {
             background-color: #1c4c8a;
@@ -185,6 +245,29 @@
         footer a:hover {
             text-decoration: underline;
         }
+
+        .section {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .textbox {
+            width: 48%;
+            padding: 20px;
+            background-color: white;
+            margin-bottom: 20px;
+        }
+        
+        .left-textbox {
+            margin-right: 2%;
+        }
+        
+        .right-textbox {
+            margin-left: 2%;
+        }
+
+         
+
     </style>
 </head>
 
@@ -201,25 +284,7 @@
     </header>
 
     <!-- Slideshow -->
-    <div class="slideshow-container">
-        <div class="mySlides">
-            <img class="slideshow-image" src="image1.jpg" alt="Slide 1">
-        </div>
-
-        <div class="mySlides">
-            <img class="slideshow-image" src="image2.jpg" alt="Slide 2">
-        </div>
-
-        <div class="mySlides">
-            <img class="slideshow-image" src="image3.jpg" alt="Slide 3">
-        </div>
-
-        <div class="mySlides">
-            <img class="slideshow-image" src="image4.jpg" alt="Slide 4">
-        </div>
-    </div>
-    <!-- End of Slideshow -->
-
+  
     <nav>
         <div class="nav-container">
             <div class="nav-item">Home</div>
@@ -233,35 +298,54 @@
         </div>
     </nav>
 
-    <section>
-        <h2>Featured Events</h2>
-        <div class="left-section">
-            <h3>Event 1 Title</h3>
-            <p>Date: January 15, 2023</p>
-            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="slideshow-container">
+        <div class="mySlides">
+            <img class="slideshow-image" src="dc4.png" alt="Slide 1">
         </div>
 
-        <div class="right-section">
-            <h3>Event 2 Title</h3>
-            <p>Date: February 5, 2023</p>
-            <p>Description: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="mySlides">
+            <img class="slideshow-image" src="dc5.png" alt="Slide 2">
         </div>
+
+        <div class="mySlides">
+            <img class="slideshow-image" src="dc3.png" alt="Slide 3">
+        </div>
+
+        <div class="mySlides">
+            <img class="slideshow-image" src="dc2.png" alt="Slide 4">
+        </div>
+    </div>
+    <!-- End of Slideshow -->
+
+   <section class="section">
+        <div class="textbox">
+            <h2 style="background-color: #2196F3; color: #ffffff; padding: 10px;">Research Excelence Framework</h2>
+            <p> January 15, 2024</p>
+            <p class="content">The Research Excellence Framework 2021 ranked us 3rd in the UK for GPA and for 4* research.
+Our research areas include, artificial intelligence and robotics, theory of computation, security and privacy, computational life sciences and human-centred computing. The demand for computer scientists is ever-growing in a modern world and we can equip you with the knowledge to succeed.Breaking new ground in the theory and practice of computational systems and their applications, the School of Computer Science is a progressive, inclusive department, providing specialist teaching and conducting world-leading research in fundamental and applied computer science.
+
+            </p>
+             <p class="read-more" onclick="toggleContent(this)">Read More</p>
+        </div>
+
+        <div class="textbox right-textbox">
+             <h2 style="background-color: #4CAF50; color: #ffffff; padding: 10px;">“Unlocking collective intelligence: AI’s role in enhancing democracy”</h2>
+            <p> February 5, 2024</p>
+            <p class="content">This conversation will focus on innovative ways of using artificial intelligence to accelerate participatory problem solving and finding practical solutions to pressing issues like election subversion. We will explore past uses of technology to engage the public in policymaking and why they have failed. Then we will turn to discussing how generative AI could help us to overcome those challenges and potentially usher in unprecedented opportunities for collaborative decision-making and collective action. The talk will focus on a recent set of experiments we call Smarter Crowdsourcing and the PolicySynth toolkit we have been using to expand the scale and quality of public participation in problem solving. However, the introduction of generative AI comes with certain risks, above all the danger that artificial intelligence will be used to replace rather than augment human engagement. The fusion of collective and artificial intelligence presents an exciting opportunity to strengthen democracy and improve institutional governance. It offers the promise of informed decision-making, accelerated problem-solving, and a more inclusive approach to addressing complex issues. The future of democracy and collective intelligence, however, hinges on our ability to strike a harmonious balance between human wisdom and AI-driven precision.
+            </p>
+    <p class="read-more" onclick="toggleContent(this)">Read More</p>
+        </div>
+            
     </section>
 
-    <section>
-        <h2>Latest News</h2>
-        <div class="left-section">
-            <h3>News 1 Title</h3>
-            <p>Date: March 10, 2023</p>
-            <p>Description: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </div>
-
-        <div class="right-section">
-            <h3>News 2 Title</h3>
-            <p>Date: April 1, 2023</p>
-            <p>Description: Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-    </section>
+    <script>
+        function toggleContent(element) {
+            var content = element.previousElementSibling;
+            content.classList.toggle("expanded");
+            element.innerText = content.classList.contains("expanded") ? "Read Less" : "Read More";
+        }
+    </script>
+    
 
     <footer>
         <div class="footer-content">
@@ -292,7 +376,7 @@
                 slideIndex = 1;
             }
             slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 2000); // Change slide every 2 seconds
+            setTimeout(showSlides, 5000); // Change slide every 2 seconds
         }
     </script>
 
