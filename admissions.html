@@ -110,12 +110,12 @@
             text-align: center;
             text-transform: uppercase;
             font: 700 18px/38px PT Sans, sans-serif;
-            text-decoration: none;
             cursor: pointer;
+            text-decoration: none;
         }
 
         .nav-item:hover {
-            text-decoration: underline; /* Add underline on hover */
+             text-decoration: underline; /* Add underline on hover */
         }
 
         section {
@@ -215,7 +215,10 @@
                 from { opacity: .4; }
                 to { opacity: 1; }
         }
-        
+
+        .mySlides:first-child {
+                display: flex;
+        }
 
             img.slideshow-image {
                 width: 100%;
@@ -367,6 +370,29 @@
             margin-top: 10px;
        }
 
+        .apply-here {
+            background-color: #333; /* Background color for the Apply Here section */
+            color: #fff; /* Text color */
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px; /* Adjust margin for separation */
+        }
+        
+        .apply-text {
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+        
+        /* Responsive styling */
+        @media (max-width: 600px) {
+    .apply-text {
+        font-size: 5px; /* Adjust font size for smaller screens */
+    }
+}
+
 
          
 
@@ -399,22 +425,23 @@
             <a href="innovation.html"class="nav-item">Innovation</a>
         </div> 
     </nav>
+    
 
     <div class="slideshow-container">
         <div class="mySlides">
-            <img class="slideshow-image" src="dc4.png" alt="Slide 1">
+            <img class="slideshow-image" src="adm5.webp" alt="Slide 1">
         </div>
 
         <div class="mySlides">
-            <img class="slideshow-image" src="dc5.png" alt="Slide 2">
+            <img class="slideshow-image" src="adm2.jpg" alt="Slide 2">
         </div>
 
         <div class="mySlides">
-            <img class="slideshow-image" src="dc3.png" alt="Slide 3">
+            <img class="slideshow-image" src="adm3.jpg" alt="Slide 3">
         </div>
 
         <div class="mySlides">
-            <img class="slideshow-image" src="dc2.png" alt="Slide 4">
+            <img class="slideshow-image" src="adm4.jpg" alt="Slide 4">
         </div>
     </div>
     <!-- End of Slideshow -->
@@ -423,19 +450,32 @@
 
    <section class="section">
         <div class="textbox">
-            <h2 style="background-color: #2196F3; color: #ffffff; padding: 10px;">Research Excelence Framework</h2>
-            <p> January 15, 2024</p>
-            <p class="content">The Research Excellence Framework 2021 ranked us 3rd in the UK for GPA and for 4* research.
-Our research areas include, artificial intelligence and robotics, theory of computation, security and privacy, computational life sciences and human-centred computing. The demand for computer scientists is ever-growing in a modern world and we can equip you with the knowledge to succeed.Breaking new ground in the theory and practice of computational systems and their applications, the School of Computer Science is a progressive, inclusive department, providing specialist teaching and conducting world-leading research in fundamental and applied computer science.
+            <h2 style="background-color: black; color: #ffffff; padding: 10px;">How to Apply</h2>
+            <p>Ghanaian Applicants</p>
+            <p class="content">University of Ghana online application E-VOUCHERS can be obtained by Ghanaian applicants for GH¢220.00 at the following banks: Access Bank, Ecobank, Republic Bank, Agricultural Development Bank, Ghana Commercial Bank, Zenith Bank, Universal Merchant Bank, Consolidated Bank Ghana (CBG), Prudential Bank and Fidelity Bank.
+
+The E-VOUCHERS can also be purchased through the USSD code *887*9# on all mobile telecommunication networks. Click here for more information on the USSD Payment
+
+Ghanaian applicants in the following categories are expected to apply using the E-VOUCHER:
+
+ 
 
             </p>
              <p class="read-more" onclick="toggleContent(this)">Read More</p>
         </div>
 
         <div class="textbox right-textbox">
-             <h2 style="background-color: #4CAF50; color: #ffffff; padding: 10px;">“Unlocking collective intelligence: AI’s role in enhancing democracy”</h2>
-            <p> February 5, 2024</p>
-            <p class="content">This conversation will focus on innovative ways of using artificial intelligence to accelerate participatory problem solving and finding practical solutions to pressing issues like election subversion. We will explore past uses of technology to engage the public in policymaking and why they have failed. Then we will turn to discussing how generative AI could help us to overcome those challenges and potentially usher in unprecedented opportunities for collaborative decision-making and collective action. The talk will focus on a recent set of experiments we call Smarter Crowdsourcing and the PolicySynth toolkit we have been using to expand the scale and quality of public participation in problem solving. However, the introduction of generative AI comes with certain risks, above all the danger that artificial intelligence will be used to replace rather than augment human engagement. The fusion of collective and artificial intelligence presents an exciting opportunity to strengthen democracy and improve institutional governance. It offers the promise of informed decision-making, accelerated problem-solving, and a more inclusive approach to addressing complex issues. The future of democracy and collective intelligence, however, hinges on our ability to strike a harmonious balance between human wisdom and AI-driven precision.
+             <h2 style="background-color: Gold; color: #ffffff; padding: 10px;"> How to Apply</h2>
+            <p> Foreign/International Students</p>
+            <p class="content">International applicants and Ghanaians applying from abroad should NOT buy the e-voucher. 
+                All applicants are expected to pay to the University a non-refundable application processing fee of US$110.00.This fee can be paid directly or wire transferred into the University of Ghana ECOBANK Account.
+
+Details of the Account are:
+
+            Account Name: 	University of Ghana Foreign Students Fees
+            Account Number:	2441000716652
+            Bank Details:	Ecobank Ghana Limited, Legon Branch
+            Swift:	ECOCGHAC
             </p>
     <p class="read-more" onclick="toggleContent(this)">Read More</p>
         </div>
@@ -444,25 +484,54 @@ Our research areas include, artificial intelligence and robotics, theory of comp
 
                 <div class="horizontal-boxes">
             <div class="box">
-                <h2 style="background-color: red; color: #ffffff; padding: 10px;">PHD RESEARCH SPOTLIGHT</h2>
-                 <img src="spotlight.jpg" alt="PHD Research Image">
-                <p>Read published papers regularly to stay updated on the latest scientific advancements and techniques," she said. "This will not only save you time during your research but also help in problem-solving. Furthermore, consider publishing your own research in journals to share your findings for the benefit of the broader scientific community.The Dean's Doctoral Summer Research Stipend provides COS graduate students with time to concentrate on their research over the summer and accelerate their dissertation completion.</p>
-            </div>
-            
-            <div class="box">
-                <h2 style="background-color: brown; color: #ffffff; padding: 10px;">UNDERGRADUATE RESEARCH FEATURE</h2>
-                 <img src="research.jpeg" alt="Undergrad Research Image">
-                <p>With faculty and graduate student mentorship, undergraduate researchers thrive in the Rochester Human-Computer Interaction lab</p>
-            </div>
-            
-            <div class="box">
-                <h2 style="background-color: purple; color: #ffffff; padding: 10px;">INNOVATE WITHOUT BOUNDARIES</h2>
-                 <img src="robotics.png" alt="Innovate Image">
-                <p>Computer science is one of today’s most in-demand degrees and will continue to be as computing expands to nearly every aspect of daily life.
+                <h2 style="background-color: red; color: #ffffff; padding: 10px;">UNDERGRADUATES</h2>
+                 <img src="under1.jpg" alt="PHD Research Image">
+             <ul>
+                <li>Explore our undergraduate programs in computer science and related fields.</li>
+                <li>Learn about the admission requirements and application process.</li>
+                <li>Discover the academic and extracurricular opportunities available to undergraduate students.</li>
+                <li>Connect with our admissions team for any inquiries or assistance.</li>
+            </ul>
 
-Computer scientists do more than write code — they focus on today’s most pressing challenges and have demand in nearly every field of work. Professionals in this discipline build the foundation that personal devices run on, develop software to power entire industries and businesses, and facilitate how we interact with modern technology. Whether you want to pursue a career in industry, entrepreneurship or academia, a computer science education will give you the skills needed to drive innovation and lead global progress.</p>
+                        <div class="apply-here">
+            <p class="apply-text">Apply Here</p>
+</div>
+               
             </div>
+            
+           <div class="box">
+             <h2 style="background-color: purple; color: #ffffff; padding: 10px;">POSTGRADUATE ADMISSIONS</h2>
+    <img src="post1.webp" alt="Postgraduate Admissions Image">
+    <ul>
+        <li>Explore advanced postgraduate programs designed for academic and professional development.</li>
+        <li>Check admission criteria, application deadlines, and specific requirements for postgraduate studies.</li>
+        <li>Discover the unique features of our postgraduate curriculum and the expertise of our faculty.</li>
+        <li>Reach out to our postgraduate admissions team for assistance and further details.</li>
+    </ul>
+
+               <div class="apply-here">
+            <p class="apply-text">Apply Here</p>
         </div>
+</div>
+            
+            <div class="box">
+                <h2 style="background-color: #FF7F50; color: #ffffff; padding: 10px;">PHD/MASTERS</h2>
+                 <img src="phd1.jpg" alt="Innovate Image">
+        
+               <ul>
+        <li>Explore our diverse range of graduate programs in computer science and related fields.</li>
+        <li>Find information about admission requirements, deadlines, and application procedures.</li>
+        <li>Learn about the research opportunities, faculty expertise, and facilities available to graduate students.</li>
+        <li>Connect with our graduate admissions team for personalized guidance and support.</li>
+        <li>Attend virtual information sessions and webinars to get a comprehensive overview of our graduate programs.</li>
+         </ul>
+                    <div class="apply-here">
+                <p class="apply-text">Apply Here</p>
+            </div>
+            
+                </div>
+            </div>
+    
 
 
 

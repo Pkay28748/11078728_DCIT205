@@ -111,11 +111,6 @@
             text-transform: uppercase;
             font: 700 18px/38px PT Sans, sans-serif;
             text-decoration: none;
-            cursor: pointer;
-        }
-
-        .nav-item:hover {
-            text-decoration: underline; /* Add underline on hover */
         }
 
         section {
@@ -141,7 +136,7 @@
         .textbox {
             flex: 1;
             padding: 20px;
-            background-color: #f9f9f9;
+            background-color: #F1C40F;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin: 0 10px;
             text-align: left; /* Align text to the left by default */
@@ -170,7 +165,7 @@
 
         .textbox p:nth-child(2) {
         margin-bottom: 10px; /* Add space between the date and body content */
-        font-weight: bold; 
+         
         }
 
         .textbox h2,
@@ -195,22 +190,7 @@
             max-height: none; /* Allow the content to expand when the class is added */
         }
 
-        
-       .slideshow-container {
-            max-width: 100%;
-            position: relative;
-            margin: auto;
-            overflow: hidden;
-            max-height: 800px;
-        }
-
-            .mySlides {
-                display: flex;
-                width: 100vw; /* Use viewport width to fill the entire screen */
-                animation: fade 2s ease-in-out infinite; 
-                
-                
-        }
+      
             @keyframes fade {
                 from { opacity: .4; }
                 to { opacity: 1; }
@@ -368,6 +348,46 @@
        }
 
 
+         .impact-heading {
+            font-family: 'serif', sans-serif; /* Specify your preferred font family */
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+             background-color: #E3F2FD; /* Adjust the color as needed */
+            position: relative;
+            display: inline-block;
+        }
+
+        .impact-heading::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #C0392B ; /* Adjust the color as needed */
+            bottom: 0;
+            left: 0;
+            transform-origin: 100% 50%;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .impact-heading:hover::after {
+            transform-origin: 0 50%;
+            transform: scaleX(1);
+        }
+
+        .small-text-box {
+            background-color:#C0392B ;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+
          
 
     </style>
@@ -400,70 +420,96 @@
         </div> 
     </nav>
 
-    <div class="slideshow-container">
-        <div class="mySlides">
-            <img class="slideshow-image" src="dc4.png" alt="Slide 1">
+     <div class="small-text-box">
+            <h2 class="small-box-heading">Impact Through Research : Shaping tomorrow's leaders </h2>
         </div>
 
-        <div class="mySlides">
-            <img class="slideshow-image" src="dc5.png" alt="Slide 2">
-        </div>
-
-        <div class="mySlides">
-            <img class="slideshow-image" src="dc3.png" alt="Slide 3">
-        </div>
-
-        <div class="mySlides">
-            <img class="slideshow-image" src="dc2.png" alt="Slide 4">
-        </div>
-    </div>
-    <!-- End of Slideshow -->
-
+          
       
 
    <section class="section">
+      
+       
         <div class="textbox">
-            <h2 style="background-color: #2196F3; color: #ffffff; padding: 10px;">Research Excelence Framework</h2>
-            <p> January 15, 2024</p>
-            <p class="content">The Research Excellence Framework 2021 ranked us 3rd in the UK for GPA and for 4* research.
-Our research areas include, artificial intelligence and robotics, theory of computation, security and privacy, computational life sciences and human-centred computing. The demand for computer scientists is ever-growing in a modern world and we can equip you with the knowledge to succeed.Breaking new ground in the theory and practice of computational systems and their applications, the School of Computer Science is a progressive, inclusive department, providing specialist teaching and conducting world-leading research in fundamental and applied computer science.
+            <h2 style="background-color:#A04000 ; color: #ffffff; padding: 10px;">Upcoming Research Works</h2>
+            <ul>
+                <li>Why do you think social media has such a pull on our lives?</li>
+                <li>Do think social media companies like Meta are complicit in that degradation?</li>
+                <li>Are you feeling hopeful for the future? </li>
+                <li> University recipient of NASA research awards</li>
 
-            </p>
-             <p class="read-more" onclick="toggleContent(this)">Read More</p>
+                <p class="read-more" onclick="toggleContent(this)">Read More</p>
+            </ul>
+            
+             
         </div>
 
         <div class="textbox right-textbox">
-             <h2 style="background-color: #4CAF50; color: #ffffff; padding: 10px;">“Unlocking collective intelligence: AI’s role in enhancing democracy”</h2>
-            <p> February 5, 2024</p>
+             <h2 style="background-color: #F1C40F; color: #ffffff; padding: 10px;">Robotics</h2>
+            
+            
             <p class="content">This conversation will focus on innovative ways of using artificial intelligence to accelerate participatory problem solving and finding practical solutions to pressing issues like election subversion. We will explore past uses of technology to engage the public in policymaking and why they have failed. Then we will turn to discussing how generative AI could help us to overcome those challenges and potentially usher in unprecedented opportunities for collaborative decision-making and collective action. The talk will focus on a recent set of experiments we call Smarter Crowdsourcing and the PolicySynth toolkit we have been using to expand the scale and quality of public participation in problem solving. However, the introduction of generative AI comes with certain risks, above all the danger that artificial intelligence will be used to replace rather than augment human engagement. The fusion of collective and artificial intelligence presents an exciting opportunity to strengthen democracy and improve institutional governance. It offers the promise of informed decision-making, accelerated problem-solving, and a more inclusive approach to addressing complex issues. The future of democracy and collective intelligence, however, hinges on our ability to strike a harmonious balance between human wisdom and AI-driven precision.
             </p>
     <p class="read-more" onclick="toggleContent(this)">Read More</p>
         </div>
             
     </section>
+    
 
-                <div class="horizontal-boxes">
+        <div class="horizontal-boxes">
             <div class="box">
-                <h2 style="background-color: red; color: #ffffff; padding: 10px;">PHD RESEARCH SPOTLIGHT</h2>
+                <h2 style="background-color: #196F3D ; color: #ffffff; padding: 10px;">PHD RESEARCH SPOTLIGHT</h2>
                  <img src="spotlight.jpg" alt="PHD Research Image">
                 <p>Read published papers regularly to stay updated on the latest scientific advancements and techniques," she said. "This will not only save you time during your research but also help in problem-solving. Furthermore, consider publishing your own research in journals to share your findings for the benefit of the broader scientific community.The Dean's Doctoral Summer Research Stipend provides COS graduate students with time to concentrate on their research over the summer and accelerate their dissertation completion.</p>
             </div>
+
+                    
             
             <div class="box">
-                <h2 style="background-color: brown; color: #ffffff; padding: 10px;">UNDERGRADUATE RESEARCH FEATURE</h2>
-                 <img src="research.jpeg" alt="Undergrad Research Image">
+                <h2 style="background-color: brown; color: #ffffff; padding: 10px;">DATA STRUCTURES AND ALGORITHMS:A GUIDE FOR BETTER DATA ANALYTICS</h2>
+                 <img src="data1.webp" alt="Undergrad Research Image">
                 <p>With faculty and graduate student mentorship, undergraduate researchers thrive in the Rochester Human-Computer Interaction lab</p>
+                 <p class="read-more" onclick="toggleContent(this)">Read More</p>
             </div>
             
             <div class="box">
-                <h2 style="background-color: purple; color: #ffffff; padding: 10px;">INNOVATE WITHOUT BOUNDARIES</h2>
-                 <img src="robotics.png" alt="Innovate Image">
+                <h2 style="background-color: #34495E; color: #ffffff; padding: 10px;">MACHINE LEARNING</h2>
+                 <img src="machine.jpg" alt="Innovate Image">
                 <p>Computer science is one of today’s most in-demand degrees and will continue to be as computing expands to nearly every aspect of daily life.
 
-Computer scientists do more than write code — they focus on today’s most pressing challenges and have demand in nearly every field of work. Professionals in this discipline build the foundation that personal devices run on, develop software to power entire industries and businesses, and facilitate how we interact with modern technology. Whether you want to pursue a career in industry, entrepreneurship or academia, a computer science education will give you the skills needed to drive innovation and lead global progress.</p>
+Machine learning involves various algorithms and models, such as decision trees, support vector machines, neural networks, and more. These models are chosen based on the nature of the problem and the characteristics of the data.Good quality data is fed to the machines, and different algorithms are used to build ML models to train the machines on this data. The choice of algorithm depends on the type of data at hand and the type of activity that needs to be automated. </p>
+                 <p class="read-more" onclick="toggleContent(this)">Read More</p>
             </div>
+
         </div>
 
+        <div class="horizontal-boxes">
+            <div class="box">
+                <h2 style="background-color:orange; color: #ffffff; padding: 10px;">ARTIFICIAL INTELLIGENCE</h2>
+                 <img src="a1.png" alt="PHD Research Image">
+                <p>
+                    <ul>
+                        <li>
+                            Artificial intelligence algorithms are designed to make decisions, often using real-time data. They are unlike passive machines that are capable only of mechanical or predetermined responses. Using sensors, digital data, or remote inputs, they combine information from a variety of different sources, analyze the material instantly, and act on the insights derived from those data. With massive improvements in storage systems, processing speeds, and analytic techniques, they are capable of tremendous sophistication in analysis and decisionmaking.
+
+Artificial intelligence is already altering the world and raising important questions for society, the economy, and governance.
+                        </li>
+                        
+                    </ul>
+                </p>
+
+                <p class="read-more" onclick="toggleContent(this)">Read More</p>
+            </div>
+
+                    
+            
+      
+        </div>
+        
+
+    
+
+    
 
 
     
@@ -506,24 +552,7 @@ Computer scientists do more than write code — they focus on today’s most pre
     </footer>
 
 
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1;
-            }
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 5000); // Change slide every 2 seconds
-        }
-    </script>
+   
 
 </body>
 
