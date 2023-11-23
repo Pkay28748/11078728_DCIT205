@@ -1,4 +1,4 @@
-G<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -106,10 +106,11 @@ G<!DOCTYPE html>
         }
 
         .nav-item {
-            color: #101112;
+            color: white;
             text-align: center;
             text-transform: uppercase;
             font: 700 18px/38px PT Sans, sans-serif;
+            text-decoration: none;
         }
 
         section {
@@ -198,24 +199,7 @@ G<!DOCTYPE html>
             max-height: 800px;
         }
 
-            .mySlides {
-                display: flex;
-                width: 100vw; /* Use viewport width to fill the entire screen */
-                animation: fade 2s ease-in-out infinite; 
-                
-                
-        }
-            @keyframes fade {
-                from { opacity: .4; }
-                to { opacity: 1; }
-        }
-        
-
-            img.slideshow-image {
-                width: 100%;
-                height: auto;
-                object-fit: cover;
-            }
+       
 
         .horizontal-boxes {
                 display: flex;
@@ -334,18 +318,18 @@ G<!DOCTYPE html>
         }
         
         .textbox {
-            width: 48%;
+            width: 80%;
             padding: 20px;
             background-color: white;
             margin-bottom: 20px;
         }
         
         .left-textbox {
-            margin-right: 2%;
+            margin-right: 1%;
         }
         
         .right-textbox {
-            margin-left: 2%;
+            margin-left: 1%;
         }
 
          .box h2 {
@@ -357,9 +341,32 @@ G<!DOCTYPE html>
         .box-content {
             font-family: 'bodoni', sans-serif; 
             font-size: 16px;
-            color: #333; 
+            color: red; 
             margin-top: 10px;
        }
+
+           .search-button {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0; /* Adjust margin as needed */
+        }
+
+        .search-input {
+            padding: 20px;
+            width: 60%;
+            box-sizing: border-box;
+            background-color: transparent;
+        }
+
+         .search-btn {
+            padding: 10px;
+            background-color: #1a5373;
+            color: black;
+            border: none;
+            cursor: pointer;
+            box-sizing: border-box;
+            margin-right: 10px; /* Adjust margin as needed */
+        }
 
 
          
@@ -370,93 +377,134 @@ G<!DOCTYPE html>
 <body>
     <header>
         <img loading="lazy" srcset="dcs.png" class="img" alt="Department Logo">
-        <div class="header-text-box">
-            <span>Welcome, User!</span>
-            <div class="search-container">
-                <input type="text" placeholder="Search...">
-                <button class="search-btn">Search</button>
-            </div>
-        </div>
+        
     </header>
 
     <!-- Slideshow -->
   
+    
     <nav>
         <div class="nav-container">
-            <div class="nav-item">Home</div>
-            <div class="nav-item">Admissions</div>
-            <div class="nav-item">Research</div>
-            <div class="nav-item">News & Events</div>
-            <div class="nav-item">About Us</div>
-            <div class="nav-item">Alumni</div>
-            <div class="nav-item">Our Students</div>
-            <div class="nav-item">Innovation</div>
-        </div>
+            <a href="DOCTYPE.html" class="nav-item">Home</a>
+            <a href="admissions.html" class="nav-item">Admissions</a>
+            <a href="research.html" class="nav-item">Research</a>
+            <a href="news.html" class="nav-item">News & Events</a>
+            <a href="about.html" class="nav-item">About Us</a>
+            <a href="alumni.html"  class="nav-item">Alumni</a>
+            <a href="Students.html" class="nav-item">Our Students</a>
+            <a href="innovation.html"class="nav-item">Innovation</a>
+        </div> 
     </nav>
 
-    <div class="slideshow-container">
-        <div class="mySlides">
-            <img class="slideshow-image" src="dc4.png" alt="Slide 1">
-        </div>
-
-        <div class="mySlides">
-            <img class="slideshow-image" src="dc5.png" alt="Slide 2">
-        </div>
-
-        <div class="mySlides">
-            <img class="slideshow-image" src="dc3.png" alt="Slide 3">
-        </div>
-
-        <div class="mySlides">
-            <img class="slideshow-image" src="dc2.png" alt="Slide 4">
-        </div>
+     <div class="search-button">
+        <input type="text" class="search-input" placeholder="Search...">
+        <button class="search-btn">Search</button>
     </div>
-    <!-- End of Slideshow -->
+    
 
+   
       
+  <section class="section">
+        <div class="box">
+             <img src="n1.jpg" alt="PHD Research Image">
+            
+            <p> Tech research and innovation take centre stage at tenth annual ARIA showcase</p>
+            <p class="content">
+                Improving text-to-speech generation for low-resource languages. Using deep learning for early septic shock detection. Enhancing retail analytics through AI. 
 
-   <section class="section">
-        <div class="textbox">
-            <h2 style="background-color: #2196F3; color: #ffffff; padding: 10px;">Research Excelence Framework</h2>
-            <p> January 15, 2024</p>
-            <p class="content">The Research Excellence Framework 2021 ranked us 3rd in the UK for GPA and for 4* research.
-Our research areas include, artificial intelligence and robotics, theory of computation, security and privacy, computational life sciences and human-centred computing. The demand for computer scientists is ever-growing in a modern world and we can equip you with the knowledge to succeed.Breaking new ground in the theory and practice of computational systems and their applications, the School of Computer Science is a progressive, inclusive department, providing specialist teaching and conducting world-leading research in fundamental and applied computer science.
+These were among the 100-plus examples of tech innovation on display at the tenth annual Applied Research in Action (ARIA) showcase on November 16 at the Metro Toronto Convention Centre. 
+
+Hosted by the University of Toronto’s Department of Computer Science Master of Science in Applied Computing (MScAC) program, ARIA highlights cutting-edge technological research and advancements from students, faculty and a wide range of key players in Toronto’s technology industry. The event has grown significantly in recent years, attracting over 1,100 registrants in 2023. 
 
             </p>
              <p class="read-more" onclick="toggleContent(this)">Read More</p>
         </div>
 
-        <div class="textbox right-textbox">
-             <h2 style="background-color: #4CAF50; color: #ffffff; padding: 10px;">“Unlocking collective intelligence: AI’s role in enhancing democracy”</h2>
-            <p> February 5, 2024</p>
-            <p class="content">This conversation will focus on innovative ways of using artificial intelligence to accelerate participatory problem solving and finding practical solutions to pressing issues like election subversion. We will explore past uses of technology to engage the public in policymaking and why they have failed. Then we will turn to discussing how generative AI could help us to overcome those challenges and potentially usher in unprecedented opportunities for collaborative decision-making and collective action. The talk will focus on a recent set of experiments we call Smarter Crowdsourcing and the PolicySynth toolkit we have been using to expand the scale and quality of public participation in problem solving. However, the introduction of generative AI comes with certain risks, above all the danger that artificial intelligence will be used to replace rather than augment human engagement. The fusion of collective and artificial intelligence presents an exciting opportunity to strengthen democracy and improve institutional governance. It offers the promise of informed decision-making, accelerated problem-solving, and a more inclusive approach to addressing complex issues. The future of democracy and collective intelligence, however, hinges on our ability to strike a harmonious balance between human wisdom and AI-driven precision.
+        <div class="box right-box">
+             <img src="n2.webp" alt="PHD Research Image">
+            
+            <p> Alan Turing and the Power of Negative Thinking</p>
+            <p class="content">Algorithms have become ubiquitous. They optimize our commutes, process payments, and coordinate the flow of internet traffic. It seems that for every problem that can be articulated in precise mathematical terms, there’s an algorithm that can solve it, at least in principle.
+
+But that’s not the case—some seemingly simple problems can never be solved algorithmically. The pioneering computer scientist Alan Turing proved the existence of such “uncomputable” problems nearly a century ago, in the same paper where he formulated the mathematical model of computation that launched modern computer science.Turing proved this groundbreaking result using a counterintuitive strategy: He defined a problem that simply rejects every attempt to solve it.
+
+“I ask you what you’re doing, and then I say, ‘No, I’m going to do something different,’” said Rahul Ilango, a graduate student at the Massachusetts Institute of Technology studying theoretical computer science.
+
+Turing’s strategy was based on a mathematical technique called diagonalization that has a distinguished history. Here’s a simplified account of the logic behind his proof.
+
+
+
+            </p>
+    <p class="read-more" onclick="toggleContent(this)">Read More</p>
+        </div>
+
+       <div class="box right-box">
+            <img src="n3.webp" alt="PHD Research Image">
+            
+            <p> Hyperdimensional Computing Reimagines Artificial Intelligence</p>
+            <p class="content">DESPITE THE WILD success of ChatGPT and other large language models, the artificial neural networks (ANNs) that underpin these systems might be on the wrong track.
+
+For one, ANNs are “super power-hungry,” said Cornelia Fermüller, a computer scientist at the University of Maryland. “And the other issue is [their] lack of transparency.” Such systems are so complicated that no one truly understands what they’re doing, or why they work so well. This, in turn, makes it almost impossible to get them to reason by analogy, which is what humans do—using symbols for objects, ideas, and the relationships between them.Such shortcomings likely stem from the current structure of ANNs and their building blocks: individual artificial neurons. Each neuron receives inputs, performs computations, and produces outputs. Modern ANNs are elaborate networks of these computational units, trained to do specific tasks.
+
+Yet the limitations of ANNs have long been obvious. Consider, for example, an ANN that tells circles and squares apart. One way to do it is to have two neurons in its output layer, one that indicates a circle and one that indicates a square. If you want your ANN to also discern the shape’s color—say, blue or red—you’ll need four output neurons: one each for blue circle, blue square, red circle, and red square. More features mean even more neurons.
             </p>
     <p class="read-more" onclick="toggleContent(this)">Read More</p>
         </div>
             
     </section>
 
-                <div class="horizontal-boxes">
+            
+    
+    
+            <section class="section">
+                <div class="box">
             <div class="box">
-                <h2 style="background-color: red; color: #ffffff; padding: 10px;">PHD RESEARCH SPOTLIGHT</h2>
-                 <img src="spotlight.jpg" alt="PHD Research Image">
-                <p>Read published papers regularly to stay updated on the latest scientific advancements and techniques," she said. "This will not only save you time during your research but also help in problem-solving. Furthermore, consider publishing your own research in journals to share your findings for the benefit of the broader scientific community.The Dean's Doctoral Summer Research Stipend provides COS graduate students with time to concentrate on their research over the summer and accelerate their dissertation completion.</p>
+                
+                 <img src="n8.jpg" alt="PHD Research Image">
+               
             </div>
             
             <div class="box">
-                <h2 style="background-color: brown; color: #ffffff; padding: 10px;">UNDERGRADUATE RESEARCH FEATURE</h2>
-                 <img src="research.jpeg" alt="Undergrad Research Image">
-                <p>With faculty and graduate student mentorship, undergraduate researchers thrive in the Rochester Human-Computer Interaction lab</p>
+                
+                 <img src="n7.webp" alt="Undergrad Research Image">
+                
+                
             </div>
             
             <div class="box">
-                <h2 style="background-color: purple; color: #ffffff; padding: 10px;">INNOVATE WITHOUT BOUNDARIES</h2>
-                 <img src="robotics.png" alt="Innovate Image">
-                <p>Computer science is one of today’s most in-demand degrees and will continue to be as computing expands to nearly every aspect of daily life.
-
-Computer scientists do more than write code — they focus on today’s most pressing challenges and have demand in nearly every field of work. Professionals in this discipline build the foundation that personal devices run on, develop software to power entire industries and businesses, and facilitate how we interact with modern technology. Whether you want to pursue a career in industry, entrepreneurship or academia, a computer science education will give you the skills needed to drive innovation and lead global progress.</p>
+                
+                 <img src="n6.jpg" alt="Innovate Image">
+                
+                
+                
             </div>
         </div>
+                </section>
+
+     <section class="section">
+        <div class="box">
+             <img src="n5.webp" alt="PHD Research Image">
+            
+            <p> Imagine the Possibilities of Speaking Fluent Machine</p>
+            <p class="content">IT’S DIFFICULT TO reflect on the past year—or forecast the next—without a sense of wonder regarding the sheer magnitude of innovation taking place across the AI landscape. On a weekly basis, researchers across industry and academia have published work advancing the state-of-the-art in nearly every domain of AI, toppling benchmarking leaderboards and accomplishing feats beyond what we could have imagined even a few years ago.In large part, this progress is due to the rapid advancements we’ve seen in large AI models. Recent progress in supercomputing techniques and new applications of neural network architectures have allowed us to train massive, centralized models that can accomplish a wide variety of tasks using natural language inputs—from summarizing and generating text with unprecedented levels of sophistication, to even generating complex code for developers.
+
+            </p>
+             <p class="read-more" onclick="toggleContent(this)">Read More</p>
+        </div>
+         
+
+        <div class="box right-box">
+             <img src="n4.png" alt="PHD Research Image">
+            
+            <p> A New Computer Proof ‘Blows Up’ Centuries-Old Fluid Equations</p>
+            <p class="content">FOR CENTURIES, MATHEMATICIANS have sought to understand and model the motion of fluids. The equations that describe how ripples crease the surface of a pond have also helped researchers to predict the weather, design better airplanes, and characterize how blood flows through the circulatory system. These equations are deceptively simple when written in the right mathematical language. However, their solutions are so complex that making sense of even basic questions about them can be prohibitively difficult.Perhaps the oldest and most prominent of these equations, formulated by Leonhard Euler more than 250 years ago, describe the flow of an ideal, incompressible fluid: a fluid with no viscosity, or internal friction, and that cannot be forced into a smaller volume. “Almost all nonlinear fluid equations are kind of derived from the Euler equations,” said Tarek Elgindi, a mathematician at Duke University. “They’re the first ones, you could say.”
+
+Yet much remains unknown about the Euler equations—including whether they’re always an accurate model of ideal fluid flow. One of the central problems in fluid dynamics is to figure out if the equations ever fail, outputting nonsensical values that render them unable to predict a fluid’s future states.
+            </p>
+    <p class="read-more" onclick="toggleContent(this)">Read More</p>
+        </div>
+            
+    </section>
 
 
 
@@ -500,24 +548,7 @@ Computer scientists do more than write code — they focus on today’s most pre
     </footer>
 
 
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1;
-            }
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 5000); // Change slide every 2 seconds
-        }
-    </script>
+    
 
 </body>
 
