@@ -57,7 +57,7 @@ This project is licensed under the [UG License](LICENSE).
 ![Homepage](screenshots/homepage.png)
 
 ### Admissions
-![Admissions](screenshots/admissions.png)
+![Admissions](screenshots/admission.png)
 
 ### Research
 ![Research](screenshots/research.png)
@@ -80,8 +80,7 @@ This project is licensed under the [UG License](LICENSE).
 ### People
 ![People](screenshots/ourpeople.png)
 
-### Contact
-![Contact](screenshots/contact.png)
+
 
 
 
