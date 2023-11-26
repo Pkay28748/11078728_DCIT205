@@ -15,7 +15,7 @@
             display: flex;
             min-height: 100vh;
             flex-direction: column;
-            background-image: url('admissionsHomePage.png');
+            background-image: url('pp8.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             overflow-x: hidden; /* Hide horizontal scroll */
@@ -30,7 +30,7 @@
             bottom: 0;
             left: 0;
             z-index: -1;
-            background: rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0);
             pointer-events: none;
             box-sizing: border-box;
         }
@@ -115,7 +115,7 @@
             white-space: nowrap;
    
 }
-      
+        
 
         .nav-item:hover {
             text-decoration: underline; /* Add underline on hover */
@@ -199,61 +199,9 @@
         }
 
         
-       .slideshow-container {
-            max-width: 100%;
-            position: relative;
-            margin: auto;
-            overflow: hidden;
-            max-height: 800px;
-        }
+  
 
-            .mySlides {
-                display: flex;
-                width: 100vw; /* Use viewport width to fill the entire screen */
-                animation: fade 2s ease-in-out infinite; 
-                
-                
-        }
-            @keyframes fade {
-                from { opacity: .4; }
-                to { opacity: 1; }
-        }
-        
-
-            img.slideshow-image {
-                width: 100%;
-                height: auto;
-                object-fit: cover;
-            }
-
-        .horizontal-boxes {
-                display: flex;
-                justify-content: space-between;
-                margin-top: 20px; /* Adjust margin as needed */
-}
-
-        .box {
-                flex: 1;
-                padding: 20px;
-                background-color: #f0f0f0;
-                border: 1px solid #ddd;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-                text-align: center;
-                border: 2px solid #ddd;
-                border-radius: 10px;
-                transition: box-shadow 0.3s ease;
-                }
-
-        .box img {
-                width: 100%; /* Make the image fill the container */
-                height: auto;
-            }
-
-         .box:hover {
-                box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-                background-color: #e0e0e0;
-        }
-
+      
 
 
         footer {
@@ -341,34 +289,75 @@
             display: flex;
             justify-content: space-between;
         }
-        
+
         .textbox {
             width: 48%;
             padding: 20px;
             background-color: white;
             margin-bottom: 20px;
         }
-        
-        .left-textbox {
-            margin-right: 2%;
-        }
-        
-        .right-textbox {
-            margin-left: 2%;
-        }
 
-         .box h2 {
+        .textbox h2 {
             font-size: 18px;
-            color: #2196F3;
+            color: black;
             margin-bottom: 10px;
+       }
+
+        .textbox img {
+            max-width: 100%; /* Set the maximum width for the image */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 10px; /* Add some space below the image */
         }
 
-        .box-content {
-            font-family: 'bodoni', sans-serif; 
-            font-size: 16px;
-            color: #333; 
-            margin-top: 10px;
-       }
+        . textbox p {
+    /* Add styling for the description text if needed */
+        }
+
+
+        .horizontal-section {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.left-half, .right-half {
+    flex: 1;
+    padding: 20px;
+    background-color: #CF6E0E ;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 18px;
+   
+}
+
+.left-half h2 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.right-half img {
+    width: 100%; /* Make the image fill the container */
+    height: auto;
+    border-radius: 10px; /* Optional: Add border-radius for rounded corners */
+}
+
+.horizontal-section:hover .left-half,
+.horizontal-section:hover .right-half {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: #e0e0e0;
+}
+
+
+.box,
+.left-half,
+.right-half {
+    cursor: pointer;
+}
+                
+      
 
 
          
@@ -388,7 +377,9 @@
         </div>
     </header>
 
- <nav>
+    <!-- Slideshow -->
+  
+  <nav>
         <div class="nav-container">
             <a href="DOCTYPE.html" class="nav-item">Home</a>
             <a href="admissions.html" class="nav-item">Admissions</a>
@@ -401,82 +392,70 @@
             <a href="innovation.html"class="nav-item">Innovation</a>
         </div> 
     </nav>
-    
-    <div class="slideshow-container">
-        <div class="mySlides">
-            <img class="slideshow-image" src="dc4.png" alt="Slide 1">
-        </div>
 
-        <div class="mySlides">
-            <img class="slideshow-image" src="dc5.png" alt="Slide 2">
-        </div>
-
-        <div class="mySlides">
-            <img class="slideshow-image" src="dc3.png" alt="Slide 3">
-        </div>
-
-        <div class="mySlides">
-            <img class="slideshow-image" src="dc2.png" alt="Slide 4">
-        </div>
+    <section class="horizontal-section">
+    <div class="left-half">
+        <h2>OUR STUDENTS</h2>
+        <p>Information for current students on degrees, courses, student handbooks and examinations</p>
     </div>
-    <!-- End of Slideshow -->
+    <div class="right-half">
+        <img src="pp10.jpg" alt="Image Description">
+    </div>
+</section>
+
+    
+    
+    <section class="section">
+        <!-- Box 1 -->
+        <div class="textbox">
+            <h2>Online Resources, Handbooks & Library</h2>
+            <img src="pp9.jpg" alt="Student 1">
+           
+        </div>
+
+        <!-- Box 2 -->
+        <div class="textbox">
+            <h2>Timetables</h2>
+            <img src="pp4.jpg" alt="Student 2">
+           
+        </div>
+
+         <div class="textbox">
+            <h2>Examination</h2>
+            <img src="pp2.jpg" alt="Student 2">
+            
+        </div>
+
+        </section>
+
+     <section class="section">
+
+         <div class="textbox">
+            <h2>Courses A-Z</h2>
+            <img src="pp5.jpg" alt="Student 2">
+           
+        </div>
+        
+         <div class="textbox">
+            <h2>Degrees</h2>
+            <img src="pp3.jpeg" alt="Student 2">
+            
+        </div>
+        
+
+        <!-- Box 6 -->
+        <div class="textbox">
+            <h2>Minerva</h2>
+            <img src="pp1.png" alt="Student 6">
+            
+        </div>
+    </section>
+
 
       
 
-   <section class="section">
-        <div class="textbox">
-            <h2 style="background-color: #2196F3; color: #ffffff; padding: 10px;">Research Excelence Framework</h2>
-            <p> January 15, 2024</p>
-            <p class="content">The Research Excellence Framework 2021 ranked us 3rd in the UK for GPA and for 4* research.
-Our research areas include, artificial intelligence and robotics, theory of computation, security and privacy, computational life sciences and human-centred computing. The demand for computer scientists is ever-growing in a modern world and we can equip you with the knowledge to succeed.Breaking new ground in the theory and practice of computational systems and their applications, the School of Computer Science is a progressive, inclusive department, providing specialist teaching and conducting world-leading research in fundamental and applied computer science.
-
-            </p>
-             <p class="read-more" onclick="toggleContent(this)">Read More</p>
-        </div>
-
-        <div class="textbox right-textbox">
-             <h2 style="background-color: #4CAF50; color: #ffffff; padding: 10px;">“Unlocking collective intelligence: AI’s role in enhancing democracy”</h2>
-            <p> February 5, 2024</p>
-            <p class="content">This conversation will focus on innovative ways of using artificial intelligence to accelerate participatory problem solving and finding practical solutions to pressing issues like election subversion. We will explore past uses of technology to engage the public in policymaking and why they have failed. Then we will turn to discussing how generative AI could help us to overcome those challenges and potentially usher in unprecedented opportunities for collaborative decision-making and collective action. The talk will focus on a recent set of experiments we call Smarter Crowdsourcing and the PolicySynth toolkit we have been using to expand the scale and quality of public participation in problem solving. However, the introduction of generative AI comes with certain risks, above all the danger that artificial intelligence will be used to replace rather than augment human engagement. The fusion of collective and artificial intelligence presents an exciting opportunity to strengthen democracy and improve institutional governance. It offers the promise of informed decision-making, accelerated problem-solving, and a more inclusive approach to addressing complex issues. The future of democracy and collective intelligence, however, hinges on our ability to strike a harmonious balance between human wisdom and AI-driven precision.
-            </p>
-    <p class="read-more" onclick="toggleContent(this)">Read More</p>
-        </div>
-            
-    </section>
-
-                <div class="horizontal-boxes">
-            <div class="box">
-                <h2 style="background-color: red; color: #ffffff; padding: 10px;">PHD RESEARCH SPOTLIGHT</h2>
-                 <img src="spotlight.jpg" alt="PHD Research Image">
-                <p>Read published papers regularly to stay updated on the latest scientific advancements and techniques," she said. "This will not only save you time during your research but also help in problem-solving. Furthermore, consider publishing your own research in journals to share your findings for the benefit of the broader scientific community.The Dean's Doctoral Summer Research Stipend provides COS graduate students with time to concentrate on their research over the summer and accelerate their dissertation completion.</p>
-            </div>
-            
-            <div class="box">
-                <h2 style="background-color: brown; color: #ffffff; padding: 10px;">UNDERGRADUATE RESEARCH FEATURE</h2>
-                 <img src="research.jpeg" alt="Undergrad Research Image">
-                <p>With faculty and graduate student mentorship, undergraduate researchers thrive in the Rochester Human-Computer Interaction lab</p>
-            </div>
-            
-            <div class="box">
-                <h2 style="background-color: purple; color: #ffffff; padding: 10px;">INNOVATE WITHOUT BOUNDARIES</h2>
-                 <img src="robotics.png" alt="Innovate Image">
-                <p>Computer science is one of today’s most in-demand degrees and will continue to be as computing expands to nearly every aspect of daily life.
-
-Computer scientists do more than write code — they focus on today’s most pressing challenges and have demand in nearly every field of work. Professionals in this discipline build the foundation that personal devices run on, develop software to power entire industries and businesses, and facilitate how we interact with modern technology. Whether you want to pursue a career in industry, entrepreneurship or academia, a computer science education will give you the skills needed to drive innovation and lead global progress.</p>
-            </div>
-        </div>
-
-
-
-    
-
-    <script>
-        function toggleContent(element) {
-            var content = element.previousElementSibling;
-            content.classList.toggle("expanded");
-            element.innerText = content.classList.contains("expanded") ? "Read Less" : "Read More";
-        }
-    </script>
+           
+     
     
 
     <footer>
@@ -508,24 +487,6 @@ Computer scientists do more than write code — they focus on today’s most pre
     </footer>
 
 
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {
-                slideIndex = 1;
-            }
-            slides[slideIndex - 1].style.display = "block";
-            setTimeout(showSlides, 5000); // Change slide every 2 seconds
-        }
-    </script>
 
 </body>
 

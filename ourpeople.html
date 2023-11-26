@@ -15,7 +15,7 @@
             display: flex;
             min-height: 100vh;
             flex-direction: column;
-            background-image: url('bb2.jpg');
+            background-image: url('back1.jpeg');
             background-size: cover;
             background-repeat: no-repeat;
             overflow-x: hidden; /* Hide horizontal scroll */
@@ -149,17 +149,7 @@
         .expanded {
             max-height: none; /* Allow the content to expand when the class is added */
         }
-        
-                .read-more {
-            cursor: pointer;
-            color: #2196F3;
-            transition: color 0.3s ease, background-color 0.3s ease; /* Add smooth transitions */
-        }
-        
-        .read-more:hover {
-            color: #1565C0;
-            background-color: #E3F2FD;
-        }
+
  
 
        
@@ -251,7 +241,68 @@
             display: flex;
             justify-content: space-between;
         }
-       
+        
+         .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card {
+            flex: 0 0 48%;
+            margin-bottom: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-content {
+            padding: 20px;
+            text-align: left;
+        }
+
+        .card h2 {
+            background-color: #2196F3;
+            color: #ffffff;
+            padding: 10px;
+            margin: -20px -20px 20px -20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .card p {
+            margin: 0;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 2px solid #ddd;
+        }
+
+        /* Adjust the height and object-fit of the images in the box */
+.box img {
+    width: 100%;
+    height: 150px; /* Set a specific height */
+    object-fit: cover;
+}
+
+/* Add some styling to the box content */
+.box-content {
+    font-family: 'bodoni', sans-serif; 
+    font-size: 16px;
+    color: #333; 
+    margin-top: 10px;
+}
+
 
          
 
@@ -287,76 +338,65 @@
     </nav>
 
     <section>
-        <h1>Alumni</h1>
+        <div class="card-container">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="hod1.webp" alt="Person 1">
+                <div class="card-content">
+                    <h2>Head of Department</h2>
+                    <p>Name: John Doe</p>
+                    <p>Email: john.doe@st.ug.edu.gh</p>
+                </div>
+            </div>
 
-        <div class="textbox">
-            <h2 style="background-color: #2196F3; color: #ffffff; padding: 10px;">Join Our Alumni Network</h2>
-            <p>Stay connected with the Department of Computer Science and fellow alumni. Join our vibrant community to share experiences, collaborate on projects, and stay updated on the latest developments in the field.</p>
-            <p class="read-more" onclick="toggleContent(this)">Read More</p>
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="hod2.jpg" alt="Person 2">
+                <div class="card-content">
+                    <h2>Deputy</h2>
+                    <p>Name: Jane Smith</p>
+                    <p>Email: jane.smith@st.ug.edu.gh</p>
+                </div>
+            </div>
+
+             <div class="card">
+                <img src="hod4.jpg" alt="Person 2">
+                <div class="card-content">
+                    <h2>Course Advisor</h2>
+                    <p>Name: Mark Attah Mensah</p>
+                    <p>Email: markmensah@st.ug.edu.gh</p>
+                </div>
+            </div>
+
+             <div class="card">
+                <img src="hod6.jpg" alt="Person 2">
+                <div class="card-content">
+                    <h2>Associate Professor</h2>
+                    <p>Name: Charles Godfred Ackah</p>
+                    <p>Email: cgackah@st.ug.edu.gh</p>
+                </div>
+            </div>
+
+             <div class="card">
+                <img src="hod9.jpg" alt="Person 2">
+                <div class="card-content">
+                    <h2>Associate Professor</h2>
+                    <p>Name: Dr. Lydia Mosi</p>
+                    <p>Email: lmosi@st.ug.edu.gh</p>
+                </div>
+            </div>
+
+             <div class="card">
+                <img src="hod10.jpg" alt="Person 2">
+                <div class="card-content">
+                    <h2>Valedictorian PHD Computer Science </h2>
+                    <p>Name: Dr. Kofi Sarpong Adu Manu</p>
+                    <p>Email: Ksarpong23@st.ug.edu.gh</p>
+                </div>
+            </div>
+
         </div>
-
-        <div class="horizontal-boxes">
-            <div class="box">
-                <h2 style="background-color: red; color: #ffffff; padding: 10px;">Alumni Success Stories</h2>
-                <img src="alu2.jpg" alt="Alumni Success Image" style="width: 100%; height: auto;">
-
-                <p>Explore inspiring stories of our alumni who have made significant contributions to the world of technology and beyond. Their journeys and achievements reflect the excellence of our computer science program.</p>
-                 <p class="read-more" onclick="toggleContent(this)">Read More</p>
-            </div>
-
-            <div class="box">
-                <h2 style="background-color: brown; color: #ffffff; padding: 10px;">Alumni Events</h2>
-                <img src="alu3.jpg" alt="Alumni Success Image" style="width: 100%; height: auto;">
-
-                <p>Participate in exciting alumni events, reunions, and networking opportunities. Connect with former classmates, faculty, and industry professionals at events designed to foster collaboration and celebrate achievements.</p>
-                 <p class="read-more" onclick="toggleContent(this)">Read More</p>
-            </div>
-
-            <div class="box">
-                <h2 style="background-color: purple; color: #ffffff; padding: 10px;">Alumni Spotlight</h2>
-                <img src="alu1.webp" alt="Alumni Success Image" style="width: 100%; height: auto;">
-
-                <p>Highlighting exceptional achievements of individual alumni. Learn about their career paths, contributions to the field, and the impact they've made in various domains. Be inspired by the diverse paths our alumni have taken.</p>
-            </div>
-             <p class="read-more" onclick="toggleContent(this)">Read More</p>
-        </div>
-
-        <div class="textbox">
-            <h2 style="background-color: #4CAF50; color: #ffffff; padding: 10px;">Alumni Benefits</h2>
-            <p>As a valued member of our alumni community, you are entitled to a range of benefits:</p>
-            <ul>
-                <li>Exclusive access to career resources and job postings</li>
-                <li>Invitations to specialized workshops and seminars</li>
-                <li>Discounts on continuing education programs</li>
-                <li>Networking opportunities with industry leaders</li>
-                <li>Access to research publications and resources</li>
-            </ul>
-             <p class="read-more" onclick="toggleContent(this)">Read More</p>
-        </div>
-
-        <div class="horizontal-boxes">
-            <div class="box">
-                <h2 style="background-color: #FF9800; color: #ffffff; padding: 10px;">Alumni in the Industry</h2>
-               <img src="alu7.jpg" alt="Alumni Success Image" style="width: 100%; height: auto;">
-
-                <p>Discover the impact our alumni are making in various industries. From leading tech companies to innovative startups, our graduates are shaping the future of technology and contributing to advancements in diverse sectors.</p>
-                 <p class="read-more" onclick="toggleContent(this)">Read More</p>
-            </div>
-
-            <div class="box">
-                <h2 style="background-color: #FF5722; color: #ffffff; padding: 10px;">Get Involved</h2>
-                <img src="alu5.jpg" alt="Alumni Success Image" style="width: 100%; height: auto;">
-
-                <p>Contribute to the growth and success of the Department of Computer Science by getting involved. Whether it's mentoring current students, participating in advisory boards, or supporting research initiatives, your involvement makes a difference.</p>
-                 <p class="read-more" onclick="toggleContent(this)">Read More</p>
-            </div>
-        </div>
-
-        <!-- Add more content as needed -->
-
     </section>
-
-
 
 
       
@@ -389,14 +429,6 @@
             
         </div>
     </footer>
-
-    <script>
-    function toggleContent(element) {
-        var content = element.previousElementSibling;
-        content.classList.toggle("expanded");
-        element.innerText = content.classList.contains("expanded") ? "Read Less" : "Read More";
-    }
-</script>
 
 
     
